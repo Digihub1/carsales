@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>MotorHub — Quality Redefined</title>
+        <link rel="stylesheet" href="Styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <meta name="description" content="MotorHub — premium vehicles, trade-in, financing and service center in Nairobi." />
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div class="contact-info">Office Hours: 8 am - 5 pm Daily <span class="divider">|</span> <i class="fas fa-phone" aria-hidden="true"></i> 0727 200 200</div>
+                <div class="top-links">
+                    <a href="mailto:info@motorhub.co.ke">info@motorhub.co.ke</a>
+                    <a href="About Us.html">About</a>
+                    <a href="#login">Login</a>
+                </div>
+            </div>
+        </div>
+
+        <header class="site-header">
+            <div class="container header-inner">
+                <div class="brand">
+                    <a href="index.html"><h1>MOTORHUB</h1><small>Quality Redefined</small></a>
+                </div>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <button class="mobile-toggle" aria-expanded="false" aria-controls="site-navigation">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <ul id="site-navigation" class="nav-list">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a class="cta" href="cars.html">Find a Car</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero + Search -->
+        <section class="hero">
+            <div class="hero-inner container">
+                <div class="hero-copy">
+                    <h2>Leading Cars Dealer in Nairobi, Kenya</h2>
+                    <p>Premium selection of new and used vehicles, flexible financing and nationwide delivery.</p>
+
+                    <form class="search-form" action="cars.html" method="get" role="search" aria-label="Search inventory">
+                        <div class="search-tabs" role="tablist">
+                            <button type="button" class="search-tab active" data-tab="all" role="tab" aria-selected="true">All</button>
+                            <button type="button" class="search-tab" data-tab="instock" role="tab" aria-selected="false">In Stock</button>
+                            <button type="button" class="search-tab" data-tab="new" role="tab" aria-selected="false">New Arrivals</button>
+                        </div>
+                        <input type="hidden" id="search-category" name="category" value="all">
+                        <div class="search-controls">
+                            <label class="visually-hidden" for="q-make">Make</label>
+                            <select id="q-make" name="make">
+                                <option value="">Make</option>
+                                <option>Toyota</option>
+                                <option>Lexus</option>
+                                <option>Mercedes</option>
+                            </select>
+                            <label class="visually-hidden" for="q-model">Model</label>
+                            <select id="q-model" name="model">
+                                <option value="">Model</option>
+                                <option>Land Cruiser</option>
+                                <option>LX570</option>
+                            </select>
+                            <label class="visually-hidden" for="q-price">Price</label>
+                            <select id="q-price" name="price">
+                                <option value="">Price Range</option>
+                                <option value="under-50">Under $50,000</option>
+                                <option value="50-100">$50,000 - $100,000</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="hero-image">
+                    <picture>
+                        <source srcset="assets/hero-1400.webp" media="(min-width:1000px)">
+                        <img src="assets/range-rover-2015640_1920.jpg" alt="MotorHub showroom and vehicles" loading="eager">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands -->
+        <section class="brands">
+            <div class="container">
+                <h3>Top Brands</h3>
+                <div class="brands-grid" aria-hidden="false">
+                    <div class="brand-item">Toyota</div>
+                    <div class="brand-item">Lexus</div>
+                    <div class="brand-item">Mercedes</div>
+                    <div class="brand-item">BMW</div>
+                    <div class="brand-item">Volvo</div>
+                    <div class="brand-item">Land Rover</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Vehicles -->
+        <section class="featured">
+            <div class="container">
+                <h3>Featured Vehicles</h3>
+                <div class="vehicles-grid">
+                    <!-- card -->
+                    <article class="vehicle-card">
+                        <div class="vehicle-media">
+                            <img src="assets/hyundai-motor-group-37-uFwiQLwY-unsplash.jpg" alt="Lexus LX570" width="900" height="600" loading="lazy" decoding="async">
+                            <span class="badge">Featured</span>
+                        </div>
+                        <div class="vehicle-body">
+                            <h4>Lexus LX570</h4>
+                            <p class="meta">2023 • 8,500 km • Petrol</p>
+                            <div class="price">$95,000 <a class="inquire" href="contact.html?vehicle=lexus-lx570">Make Inquiry</a></div>
+                        </div>
+                    </article>
+
+                    <article class="vehicle-card">
+                        <div class="vehicle-media">
+                            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Toyota Land Cruiser" width="900" height="600" loading="lazy" decoding="async">
+                            <span class="badge">New</span>
+                        </div>
+                        <div class="vehicle-body">
+                            <h4>Toyota Land Cruiser V8</h4>
+                            <p class="meta">2024 • 2,500 km • Diesel</p>
+                            <div class="price">$88,000 <a class="inquire" href="contact.html?vehicle=toyota-land-cruiser-v8">Make Inquiry</a></div>
+                        </div>
+                    </article>
+
+                    <article class="vehicle-card">
+                        <div class="vehicle-media">
+                            <img src="https://images.unsplash.com/photo-1563720223485-884b664e4eb8?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Mercedes GLE" width="900" height="600" loading="lazy" decoding="async">
+                            <span class="badge">Premium</span>
+                        </div>
+                        <div class="vehicle-body">
+                            <h4>Mercedes-Benz GLE</h4>
+                            <p class="meta">2023 • 12,000 km • Petrol</p>
+                            <div class="price">$78,500 <a class="inquire" href="contact.html?vehicle=mercedes-benz-gle">Make Inquiry</a></div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services">
+            <div class="container">
+                <h3>Services</h3>
+                <div class="services-grid">
+                    <div class="service">Car Sales</div>
+                    <div class="service">Trade-In</div>
+                    <div class="service">Service Center</div>
+                    <div class="service">Financing</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="col">
+                    <h4>MOTORHUB</h4>
+                    <p>Quality Redefined — your trusted partner for premium automotive solutions.</p>
+                </div>
+                <div class="col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 0727 200 200</p>
+                    <p><i class="fas fa-envelope"></i> info@motorhub.co.ke</p>
+                </div>
+            </div>
+            <div class="footer-bottom container">© 2025 MotorHub. All rights reserved.</div>
+        </footer>
+
+        <script defer src="Script.js"></script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "Product",
+                        "name": "Lexus LX570",
+                        "image": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb",
+                        "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "95000", "availability": "https://schema.org/InStock" }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "Product",
+                        "name": "Toyota Land Cruiser V8",
+                        "image": "https://images.unsplash.com/photo-1583121274602-3e2820c69888",
+                        "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "88000", "availability": "https://schema.org/InStock" }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "Product",
+                        "name": "Mercedes-Benz GLE",
+                        "image": "https://images.unsplash.com/photo-1563720223485-884b664e4eb8",
+                        "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "78500", "availability": "https://schema.org/InStock" }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                        "@type": "Product",
+                        "name": "BMW X5 M Sport",
+                        "image": "https://images.unsplash.com/photo-1556189250-72ba954cfc2b",
+                        "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "82000", "availability": "https://schema.org/InStock" }
+                    }
+                }
+            ]
+        }
+        </script>
+
+    </body>
+</html>
